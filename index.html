@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- CountUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header>
+        <div class="inner header_wrap">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Branding</a></li>
+                    <li><a href="#artwork">Artwork</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-close-btn" id="mobile-close-btn">X</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#artwork">Artwork</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- main banner -->
+    <main>
+        <section class="main_banner" id="home">
+            <video src="./video/main.mp4" autoplay muted loop playsinline></video>
+        </section>
+    </main>
+
+
+    <div class="container">
+
+        <!-- About -->
+        <section id="about" data-aos="fade-up">
+            <div class="inner">
+                <div class="about-layout">
+
+                    <div class="about-profile reveal">
+                        <div class="profile-visual">
+
+                            <div class="profile-image">
+                                <img src="./images/profile.png" alt="프로필 이미지">
+                            </div>
+
+                            <div class="profile-bubble">
+                                <div class="bubble-text">
+                                    <h3>말 잘 듣는 디자이너입니다.</h3>
+
+                                    <p>
+                                        “이건 조금 불편해요.”<br>
+                                        “이렇게 하면 더 좋을 것 같아요.”<br>
+                                        사용자의 이야기에 귀 기울이고<br>
+                                        더 나은 방법을 고민해 디자인으로 답하겠습니다.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="about-information reveal" style="transition-delay: 0.2s;">
+
+                        <div class="personal-info">
+                            <h2>오승현</h2>
+
+                            <div class="contact-list">
+
+                                <div class="contact-item">
+                                    <span>Phone</span>
+                                    <p>010-0000-0000</p>
+                                </div>
+
+                                <div class="contact-item">
+                                    <span>Mail</span>
+                                    <p>osh3476@naver.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="career-list">
+                            <div class="career-item">
+                                <span class="career-date">2019. 09 – 2020. 10</span>
+
+                                <div class="career-content">
+                                    <p>STUDIO BONG</p>
+                                    <p class="gray">
+                                        캐릭터 디자인 및 드로잉, 2D 그래픽 제작, 포토샵을 활용한 사진 편집 및 보정
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="career-item">
+                                <span class="career-date">2026. 05 – 2026. 08</span>
+
+                                <div class="career-content">
+                                    <p>나래디자인학원 브랜딩/디자인 과정 수료</p>
+                                    <p class="gray">
+                                        과정명 : 부산시 AI기반 UI/UX 영상편집 E-비즈니스 콘텐츠제작실무
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="career-item">
+                                <span class="career-date">2026. 01 – 2026. 05</span>
+
+                                <div class="career-content">
+                                    <p>나래디자인학원 브랜딩/디자인 과정 수료</p>
+                                    <p class="gray">
+                                        과정명 : 디지털퍼블리싱(UI/UX, 웹·편집디자인, 영상제작)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="career-item">
+                                <span class="career-date">2014. 03 – 2019. 02</span>
+
+                                <div class="career-content">
+                                    <p>동서대학교 디지털콘텐츠학부 애니메이션 전공 졸업</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <h3>Graphic Design</h3>
+                                <p>배너·상세페이지 등 콘텐츠 제작 · 캐릭터 드로잉</p>
+
+                                <div class="tool-icons">
+                                    <img src="./images/icon-ps.svg" alt="Photoshop">
+                                    <img src="./images/icon-ai.svg" alt="Illustrator">
+                                    <img src="./images/icon-figma.svg" alt="Figma">
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <h3>WEB &amp; UI</h3>
+                                <p>반응형 웹 및 UI 제작 · 웹퍼블리싱</p>
+
+                                <div class="tool-icons">
+                                    <img src="./images/icon-vs.svg" alt="Visual Studio Code">
+                                    <img src="./images/icon-js.svg" alt="JavaScript">
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <h3>AI Tools</h3>
+                                <p>AI 이미지 및 영상 생성 · 콘텐츠 기획</p>
+
+                                <div class="tool-icons">
+                                    <img src="./images/icon-gpt.svg" alt="ChatGPT">
+                                    <img src="./images/icon-gemini.svg" alt="Gemini">
+                                    <img src="./images/icon-flow.svg" alt="Google Flow">
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <h3>Video</h3>
+                                <p>영상 편집 · 기본적인 모션 연출</p>
+
+                                <div class="tool-icons">
+                                    <img src="./images/icon-pr.svg" alt="Premiere Pro">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- 프로젝트 1 MOREKORE-->
+        <section id="projects">
+            <div class="title">
+                <h1>BRANDING</h1>
+            </div>
+            <div class="inner">
+                <div class="inner_title">
+                    <h2>MOREKORE</h2>
+                    <p>브랜드 설명 브랜드 설명 브랜드 설명</p>
+                </div>
+
+                <div class="project-list">
+                    <!-- inner Project 1 -->
+                    <div class="project-item reveal" data-aos="fade-right">
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지/영상 -->
+                                <img src="./images/morekore_bibx.png" alt="bibx">
+                                <!-- <video src="./video/branding.mp4" autoplay muted loop playsinline></video> -->
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span>BI/BX guide</span>
+                            <p>mørekøre는 ‘More’와 ‘Core’의 합성어로, ‘Core’는 자신만의 본질적인 아름다움을, ‘More’는 이를 감각적으로 확장해 표현하는 태도를
+                                의미합니다.
+                                mørekøre는 각자의 고유한 아름다움과 개성을 자유롭게 표현하는 브랜드 철학을 담은 네이밍입니다.</p>
+                            <a href="./BIBX.html" class="btn-view" target="_blank">
+                                Viwe BI/BX guide
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- inner Project 2 -->
+                    <div class="project-item reverse reveal" data-aos="fade-left">
+                        <div class="project-info">
+                            <span>WEB site</span>
+                            <p>COZET은 편안한 휴식을 위한 라이프스타일 브랜드입니다. 침구, 조명, 홈 프래그런스를 통해 따뜻하고 안정적인 일상의 공간을 제안합니다.</p>
+                            <a href="https://osh34761-beep.github.io/morekore/" class="btn-view" target="_blank">
+                                Viwe WEB site
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지 -->
+                                <img src="./images/morekore_web.png" alt="brand">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 프로젝트 2 COZET -->
+        <section id="projects">
+            <div class="inner">
+
+                <div class="inner_title">
+                    <h2>COZET</h2>
+                    <p>브랜드 설명 브랜드 설명 브랜드 설명</p>
+                </div>
+
+                <div class="project-list">
+                    <!-- inner Project 1 -->
+                    <div class="project-item reveal" data-aos="fade-right">
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지/영상 -->
+                                <img src="./images/cozet_bibx.jpg" alt="brand">
+                                <!-- <video src="./video/branding.mp4" autoplay muted loop playsinline></video> -->
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span>BI/BX guide</span>
+                            <p>COZET은 편안한 휴식을 위한 라이프스타일 브랜드입니다. 침구, 조명, 홈 프래그런스를 통해 따뜻하고 안정적인 일상의 공간을 제안합니다.</p>
+                            <a href="./BIBX_2.html" class="btn-view" target="_blank">
+                                View BI/BX guide
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- inner Project 2 -->
+                    <div class="project-item reverse reveal" data-aos="fade-left">
+                        <div class="project-info">
+                            <span>WEB site</span>
+                            <p>COZET은 편안한 휴식을 위한 라이프스타일 브랜드입니다. 침구, 조명, 홈 프래그런스를 통해 따뜻하고 안정적인 일상의 공간을 제안합니다.</p>
+                            <a href="https://osh34761-beep.github.io/COZET/" class="btn-view" target="_blank">
+                                Viwe WEB site
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지 -->
+                                <img src="./images/cozet_web.jpg" alt="brand">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 아트워크 -->
+        <section id="artwork">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <h1>ARTWORK</h1>
+                    <p>브랜드설명</p>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: Clyc -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/best02.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Hydra -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/best03.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/css_icon.png" alt="css">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 3: Kayak -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/best04.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork03</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/illustrator.png" alt="illustrator">
+                                <img src="./images/indesign.png" alt="indesign">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 4: Logotypes & Marks -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/best06.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork04</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/html_icon.png" alt="html">
+                                <img src="./images/js_icon.png" alt="js">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 5: Project 05 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/artwork03.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork05</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/illustrator.png" alt="illustrator">
+                                <img src="./images/premiere.png" alt="premiere">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 6: Project 06 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/model02.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork06</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 7: Project 07 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/bedding03.jpeg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork07</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 8: Project 08 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/bedding04.jpeg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork08</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 9: Project 09 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/bedding06.jpeg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork09</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 10: Project 10 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/lamp02.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork10</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 11: Project 11 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/lamp03.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork11</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 12: Project 12 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/candle.jpeg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork12</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 13: Project 13 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/mist.jpeg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork13</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 비디오 모달 -->
+        <!-- <div id="videoModal">
+            <div class="modal-body" id="modalContainer">
+                <div class="btn-close" onclick="closeModal()">CLOSE ×</div>
+                <div id="videoPlayerArea"></div>
+            </div>
+        </div> -->
+
+        <!-- 상세페이지 -->
+        <section id="product-page">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <h1>PRODUCT PAGE</h1>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: project 1 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/product-page.png" alt="product">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 비디오 모달 -->
+        <div id="videoModal">
+            <div class="modal-body" id="modalContainer">
+                <div class="btn-close" onclick="closeModal()">CLOSE ×</div>
+                <div id="videoPlayerArea"></div>
+            </div>
+        </div>
+
+        <!-- 비디오 -->
+        <section class="slider-section">
+
+            <div class="slider-header">
+                <h3>VIDEO</h3>
+            </div>
+
+            <!-- 1. 숏츠 슬라이더 -->
+            <div class="inner">
+
+                <div class="inner_title">
+                    <h2>SHORT-FORM</h2>
+                    <p>설명글</p>
+                </div>
+
+                <div class="swiper shortsSwiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- 
+                         data-video-url: 유튜브 주소 혹은 파일 경로 / 클릭 시 보이게 하기 위한 연결
+                         data-video-type: 'vertical' (세로) 또는 'horizontal' (가로) 
+                    -->
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_1.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_1.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Modern Motion</h4>
+                                <p class="card-desc">Motion, Edit</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_2.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_2.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Branding Clip</h4>
+                                <p class="card-desc">Direction</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_3.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_3.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Direct File</h4>
+                                <p class="card-desc">MP4 Video</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_4.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_4.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Direct File</h4>
+                                <p class="card-desc">MP4 Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+
+            <!-- 2. 일반 영상 슬라이더 -->
+            <div class="slider-section">
+                <div class="inner">
+
+                    <div class="inner_title">
+                        <h2 class="title_padding">VIDEO</h2>
+                        <p>설명글</p>
+                    </div>
+
+                    <div class="swiper videoSwiper" data-aos="fade-up">
+                        <div class="swiper-wrapper">
+                            <!-- 가로 카드 01 -->
+                            <div class="swiper-slide video-card" data-video-url="./video/brand_video.mp4"
+                                data-video-type="horizontal">
+                                <div class="thumbnail-box aspect-wide">
+
+                                    <!-- 본인 작업 비디오 소스 -->
+                                    <video src="./video/brand_video.mp4"></video>
+
+                                    <div class="play-overlay">
+                                        <div class="play-circle wide-play">
+                                            <svg viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box">
+                                    <h4 class="card-title">2024 Global Campaign</h4>
+                                    <p class="card-desc">Directed the entire process from planning to final mastering.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- 가로 카드 02 -->
+                            <div class="swiper-slide video-card" data-video-url="./video/brand_video2.mp4"
+                                data-video-type="horizontal">
+                                <div class="thumbnail-box aspect-wide">
+
+                                    <!-- 본인 작업 비디오 소스 -->
+                                    <video src="./video/brand_video2.mp4"></video>
+
+                                    <div class="play-overlay">
+                                        <div class="play-circle wide-play">
+                                            <svg viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-box">
+                                    <h4 class="card-title">Cinematic Visualizer</h4>
+                                    <p class="card-desc">Experimental visual implementation and sound design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- 캐릭터 디자인 -->
+        <section id="character">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <h1>CHARACTER DESIGN</h1>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: project 1 -->
+                    <a href="./BIBX_2.html" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/character_1.png" alt="character">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: project 2 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/character_2.png" alt="character">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/css_icon.png" alt="css">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 3: project 3 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/character_3.png" alt="character">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork03</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/illustrator.png" alt="illustrator">
+                                <img src="./images/indesign.png" alt="indesign">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="footer-line"></div>
+        <!-- Contact + Footer -->
+        <section class="contact-footer">
+            <div class="contact-footer-inner">
+
+                <!-- Footer -->
+                <footer class="footer">
+
+                    <div class="footer-info">
+
+                        <div class="footer-item">
+                            <strong>오승현</strong>
+                            <span>Contents Designer</span>
+                        </div>
+
+                        <div class="footer-item">
+                            <strong>Email</strong>
+                            <span>osh3476@gmail.com</span>
+                        </div>
+
+                        <div class="footer-item">
+                            <strong>Phone</strong>
+                            <span>010-0000-0000</span>
+                        </div>
+
+                        <div class="footer-item">
+                            <strong>Copyright</strong>
+                            <span>© 2026 SEUNHYEON All rights reserved.</span>
+                        </div>
+
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+
+        <!-- header 관련 js -->
+        <script>
+            const header = document.querySelector('header');
+
+            function checkHeaderScroll() {
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+
+            window.addEventListener('scroll', checkHeaderScroll);
+
+            checkHeaderScroll();
+        </script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <!-- js -->
+        <script src="js/script.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
+</body>
+
+</html>
